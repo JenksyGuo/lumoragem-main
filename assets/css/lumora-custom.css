@@ -2,6 +2,10 @@
     background: #fffaf5;
 }
 
+.lumora-page .preloader {
+    display: none !important;
+}
+
 .lumora-brand {
     color: #34261f !important;
     font-family: Georgia, "Times New Roman", serif;
@@ -13,10 +17,24 @@
 }
 
 .lumora-header-link {
+    border: 1px solid rgba(141, 106, 79, 0.45);
     color: #8d6a4f;
-    font-size: 14px;
+    display: inline-flex;
+    font-size: 13px;
     font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    min-width: 116px;
+    padding: 14px 18px;
     text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+}
+
+.lumora-header-link:hover {
+    background: #ba9659;
+    border-color: #ba9659;
+    color: #ffffff;
 }
 
 .lumora-kicker {
@@ -124,6 +142,63 @@
     font-family: Georgia, "Times New Roman", serif;
 }
 
+.lumora-contact-title h2 {
+    text-transform: none;
+}
+
+.lumora-contact-direct {
+    color: #8d6a4f;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.lumora-contact-direct:hover {
+    color: #ba9659;
+}
+
+.lumora-contact-note {
+    color: #6d625b;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 18px;
+}
+
+.wpo-contact-map {
+    background: #f5f2ea;
+    position: relative;
+}
+
+.lumora-map-label {
+    background: rgba(255, 250, 245, 0.92);
+    border: 1px solid rgba(141, 106, 79, 0.18);
+    bottom: 34px;
+    left: 34px;
+    max-width: 320px;
+    padding: 24px 28px;
+    position: absolute;
+    z-index: 1;
+}
+
+.lumora-map-label span,
+.lumora-map-label strong {
+    display: block;
+}
+
+.lumora-map-label span {
+    color: #8d6a4f;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.lumora-map-label strong {
+    color: #281f1a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1.25;
+}
+
 @media (max-width: 1399px) {
     .lumora-hero .hero-content {
         max-width: 520px;
@@ -158,5 +233,12 @@
     .lumora-hero .hero-content .title,
     .lumora-hero .hero-content h1 {
         font-size: 36px;
+    }
+
+    .lumora-map-label {
+        bottom: 18px;
+        left: 18px;
+        max-width: calc(100% - 36px);
+        padding: 20px;
     }
 }
